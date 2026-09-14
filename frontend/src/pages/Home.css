@@ -1,0 +1,11 @@
+.home-container {
+    padding: 30px;
+    text-align: center;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
