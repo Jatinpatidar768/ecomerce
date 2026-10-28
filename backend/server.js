@@ -3,6 +3,7 @@
 const express = require("express");
 const cors = require('cors');
 require('dotenv').config();
+const PORT = process.env.PORT || 5000;
 
 const db = require("./src/database/db.js");
 
@@ -29,6 +30,6 @@ app.get("/", (req,res) => {
   res.send("backend is ruuning suucesfully hiii"); //server send response to cliet
 });
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server running on port ${process.env.PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 }); 
